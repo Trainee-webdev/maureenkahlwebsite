@@ -246,22 +246,26 @@
                 </div>
             </div>
             <div id="current-views-container">
-  <div id="current-views">
-    <span class="views-label">Current Views:</span> <span id="count">Loading...</span>
-  </div>
-</div>
+              <div id="visitor-box">
+                <span id="count">Loading...</span>
+              </div>
+              <div id="current-views-label">
+                Current Views
+              </div>
+            </div>
+            
+            <script>
+              // Fetch the visit count from the serverless function
+              fetch('/.netlify/functions/visitorCounter')
+                .then(response => response.json())
+                .then(data => {
+                  document.getElementById('count').innerText = data.visitCount;
+                })
+                .catch(error => {
+                  console.error('Error fetching visitor count:', error);
+                });
+            </script>
 
-<script>
-  // Fetch the visit count from the serverless function
-  fetch('/.netlify/functions/visitorCounter')
-    .then(response => response.json())
-    .then(data => {
-      document.getElementById('count').innerText = data.visitCount;
-    })
-    .catch(error => {
-      console.error('Error fetching visitor count:', error);
-    });
-</script>
         </footer>
         
     
