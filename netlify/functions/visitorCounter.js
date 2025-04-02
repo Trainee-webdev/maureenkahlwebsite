@@ -1,13 +1,13 @@
-exports.handler = async function (event, context) {
-  const Netlify = require("netlify");
+// functions/visitor-counter.js
+let visitCount = 0;
 
-  // Use an environment variable for storage (temporary in serverless functions)
-  let count = parseInt(process.env.VISITOR_COUNT || "0") + 1;
-  process.env.VISITOR_COUNT = count; // Temporary storage for demo purposes
+exports.handler = async function(event, context) {
+  // Increment the visit counter
+  visitCount++;
 
+  // Return the count as a JSON response
   return {
     statusCode: 200,
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ visitorCount: count }),
+    body: JSON.stringify({ visitCount })
   };
 };
