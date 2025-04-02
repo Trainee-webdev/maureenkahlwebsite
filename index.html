@@ -262,7 +262,7 @@
 
 <script>
   // Fetch the visit count from the serverless function
-  fetch('/.netlify/functions/visitor-counter')
+  fetch('/.netlify/functions/visitorCounter')
     .then(response => response.json())
     .then(data => {
       document.getElementById('count').innerText = data.visitCount;
