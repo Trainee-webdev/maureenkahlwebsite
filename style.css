@@ -2220,27 +2220,6 @@ form button {
   border: none;
   cursor: pointer;
 }
-
-.phone-group {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 10px;
-}
-
-.phone-group select {
-  width: 35%;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-}
-
-.phone-group input {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
 .submit-btn {
   margin-top: 10px;
   font-family: Poppins, sans-serif;
