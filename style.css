@@ -2334,33 +2334,30 @@ form button {
 
 .current-views-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100px; /* Adjust the height as needed */
-  background-color: #f7f7f7;
-  padding: 20px 0;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  margin-top: 30px; /* Optional, for spacing between other content */
+  margin-top: 40px;
 }
 
-.current-views {
-  font-family: 'Arial', sans-serif;
+.visitor-box {
+  width: 150px;
+  height: 150px;
+  background-color: #3c91e6;  /* Bright blue background */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-weight: bold;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;  /* Space between the box and the label */
+}
+
+.current-views-label {
   font-size: 18px;
   font-weight: bold;
   color: #333;
-  text-align: center;
+  font-family: 'Arial', sans-serif;
 }
-
-.current-views .views-label {
-  color: #5a5a5a;
-  font-size: 20px;
-  font-weight: normal;
-}
-
-.count {
-  color: #3c91e6; /* A subtle, modern blue for the counter */
-  font-size: 24px;
-  font-weight: bold;
-}
-
