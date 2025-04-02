@@ -48,27 +48,17 @@
               <div class="form-container">
                 <form name="contact1" method="POST" data-netlify="true">
                   <input type="hidden" name="form-name" value="contact1">
-            
+                  
+                  <input type="text" name="First Name" placeholder="First Name" required>
+                  <input type="text" name="Last Name" placeholder="Last Name" required>
                   <input type="email" name="Email" placeholder="Email Address" required>
-            
-                  <div class="phone-group">
-                    <select name="Country Code" required>
-                      <option value="+1">🇺🇸 +1 (US)</option>
-                      <option value="+44">🇬🇧 +44 (UK)</option>
-                      <option value="+63">🇵🇭 +63 (PH)</option>
-                      <option value="+91">🇮🇳 +91 (IN)</option>
-                    </select>
-                    <input type="tel" name="Phone" placeholder="Phone Number" pattern="[0-9]{7,15}" required>
-                  </div>
-            
-                  <input type="text" name="Name" placeholder="Your Name" required>
-                  <textarea name="Message" placeholder="Your Message" required></textarea>
-            
+                  <input type="text" name="Subject" placeholder="Subject" required>
+                  <textarea name="Comment-Message-Suggestions" placeholder="Your Comment, Message, or Suggestions" required></textarea>
+                  
                   <button type="submit" class="submit-btn">Submit</button>
                 </form>
               </div>
             </section>
-
 
 
             <section class="contact-details">
