@@ -256,5 +256,22 @@
 </nav>
 
 </div>
+        <!-- Your website's HTML -->
+<div id="visitor-count">
+  Visitors: <span id="count">Loading...</span>
+</div>
+
+<script>
+  // Fetch the visit count from the serverless function
+  fetch('/.netlify/functions/visitor-counter')
+    .then(response => response.json())
+    .then(data => {
+      document.getElementById('count').innerText = data.visitCount;
+    })
+    .catch(error => {
+      console.error('Error fetching visitor count:', error);
+    });
+</script>
+
        
     
