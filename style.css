@@ -1908,16 +1908,26 @@ button[type="submit"]:hover {
   align-items: center;
   padding-bottom: 10px;
 }
-
 .visitor-counter {
-    display: flex; /* Enables horizontal alignment */
-    align-items: center; /* Aligns items vertically */
-    gap: 10px; /* Adds space between elements */
+    display: flex;
+    align-items: center; /* Vertically aligns text and counter */
+    justify-content: center; /* Centers them horizontally in the box */
+    background-color: #c04f4f; /* Background color */
+    padding: 10px 20px;
+    border-radius: 5px; /* Optional: rounded corners */
 }
 
 .vs-part {
-    display: flex; /* Ensures contents inside are also aligned properly */
-    align-items: center; /* Align text and links properly */
+    display: flex;
+    align-items: center; /* Ensures text and counter align */
+    gap: 10px; /* Space between text and counter */
+}
+
+.vs-part p {
+    margin: 0;
+    font-weight: bold;
+    color: white;
+    white-space: nowrap; /* Prevents wrapping */
 }
 
 
