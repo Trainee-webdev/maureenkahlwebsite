@@ -249,7 +249,7 @@
             <div class="count-label">Current Views</div>
             
             <script>
-            async function updateCounter() {
+            async function visitorCounter() {
                 try {
                     const response = await fetch('/.netlify/functions/visitorCounter');
                     const data = await response.json();
