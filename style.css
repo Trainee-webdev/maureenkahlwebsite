@@ -1909,6 +1909,9 @@ button[type="submit"]:hover {
   padding-bottom: 10px;
 }
 
+.visitor-counter p {
+  margin-top: 10px;
+}
 
 
 /* Responsive Design */
