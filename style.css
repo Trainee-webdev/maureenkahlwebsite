@@ -1941,10 +1941,6 @@ button[type="submit"]:hover {
   text-align: left;
 }
 
-.copyright-text {
-  text-align: right;
-}
-
 @media (max-width: 768px) {
   .copyright {
     font-size: 8px;
