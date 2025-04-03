@@ -1817,6 +1817,7 @@ button[type="submit"]:hover {
   background: #c95555;
   color: white;
   text-align: center;
+  padding: 10px;
 }
 
 .footer-container {
@@ -1925,12 +1926,23 @@ button[type="submit"]:hover {
 }
 
 .copyright {
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: white;
   font-family: Poppins, sans-serif;
   font-size: 10px;
   color: black;
   font-weight: normal;
+  padding: 10px;
+}
+
+.visitor-counter {
+  text-align: left;
+}
+
+.copyright-text {
+  text-align: right;
 }
 
 @media (max-width: 768px) {
