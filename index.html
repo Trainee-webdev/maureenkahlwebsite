@@ -251,7 +251,7 @@
             <script>
             async function updateCounter() {
                 try {
-                    const response = await fetch('/.netlify/functions/updateCounter');
+                    const response = await fetch('/.netlify/functions/visitorCounter');
                     const data = await response.json();
                     document.getElementById('visitor-count').innerText = data.count;
                 } catch (error) {
