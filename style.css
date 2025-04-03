@@ -1926,8 +1926,6 @@ button[type="submit"]:hover {
 }
 
 .copyright {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
   background-color: white;
   font-family: Poppins, sans-serif;
