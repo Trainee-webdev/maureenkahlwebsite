@@ -1817,7 +1817,6 @@ button[type="submit"]:hover {
   background: #c95555;
   color: white;
   text-align: center;
-  padding: 20px 0;
 }
 
 .footer-container {
@@ -1907,10 +1906,6 @@ button[type="submit"]:hover {
   display: flex; /* Makes it align well */
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.5); /* Optional */
-  padding: 5px;
-  border-radius: 5px;
-  margin-bottom: 10px; /* Ensures spacing */
 }
 
 
