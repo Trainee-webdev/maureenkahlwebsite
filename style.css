@@ -2332,32 +2332,18 @@ form button {
   }
 }
 
-.current-views-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 40px;
-}
 
-.visitor-box {
-  width: 150px;
-  height: 150px;
-  background-color: #3c91e6;  /* Bright blue background */
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 40px;
-  font-weight: bold;
+.counter {
+  font-size: 50px;
+  color: #ff5733;
+  background: #ffeaa7;
+  padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 10px;  /* Space between the box and the label */
+  display: inline-block;
 }
 
-.current-views-label {
-  font-size: 18px;
-  font-weight: bold;
-  color: #333;
-  font-family: 'Arial', sans-serif;
+.count-label {
+  font-size: 20px;
+  margin-top: 10px;
 }
+
