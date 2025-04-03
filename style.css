@@ -1903,17 +1903,16 @@ button[type="submit"]:hover {
 }
 
 .visitor-counter {
-  position: absolute;
-  top: -30px;
-  left: 10px;
-  width: 150px; /* Adjust as needed */
-  height: 30px; /* Adjust based on actual counter size */
-  display: block; /* Ensures visibility */
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.5); /* Optional: for visibility */
+  width: auto; /* Allows content to resize properly */
+  display: flex; /* Makes it align well */
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Optional */
   padding: 5px;
   border-radius: 5px;
+  margin-bottom: 10px; /* Ensures spacing */
 }
+
 
 
 /* Responsive Design */
