@@ -1908,31 +1908,6 @@ button[type="submit"]:hover {
   align-items: center;
   padding-bottom: 10px;
 }
-.visitor-counter {
-    display: flex;
-    align-items: center; /* Vertically aligns text and counter */
-    justify-content: center; /* Centers them horizontally in the box */
-    padding: 10px 20px;
-    border-radius: 5px; /* Optional: rounded corners */
-}
-
-.vs-part {
-    display: flex;
-    align-items: center; /* Ensures text and counter align */
-    gap: 10px; /* Space between text and counter */
-}
-
-.vs-part p {
-    margin: 0;
-    font-weight: bold;
-    color: white;
-    white-space: nowrap; /* Prevents text from wrapping */
-    line-height: 1; /* Ensures it aligns better */
-    display: flex;
-    align-items: center; /* Centers text vertically */
-    height: 100%; /* Matches counter height */
-}
-
 
 
 /* Responsive Design */
