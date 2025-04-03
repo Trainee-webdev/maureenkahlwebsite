@@ -1960,12 +1960,12 @@ button[type="submit"]:hover {
   h3 {
     font-size: 15px;
     margin: 0;
+    padding-top: 20px;
   }
 
   .footer-container {
     flex-direction: column;
     text-align: center;
-    margin-top: 20px;
   }
 
   .footer-section {
