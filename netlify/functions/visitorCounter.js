@@ -1,18 +1,12 @@
-const fs = require("fs");
-const path = require("path");
-const filePath = path.join(__dirname, "counter.json");
-
 exports.handler = async () => {
   try {
-    let count = 0;
-
-    if (fs.existsSync(filePath)) {
-      const data = fs.readFileSync(filePath, "utf8");
-      count = JSON.parse(data).count;
-    }
-
+    // Fetch the current count from Netlify KV
+    let count = parseInt((await Netlify.env.get("visitor_count")) || "0", 10);
+    
     count += 1;
-    fs.writeFileSync(filePath, JSON.stringify({ count }), "utf8");
+
+    // Store the updated count
+    await Netlify.env.set("visitor_count", count.toString());
 
     return {
       statusCode: 200,
@@ -25,4 +19,3 @@ exports.handler = async () => {
     };
   }
 };
-
