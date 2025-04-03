@@ -8,26 +8,6 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
-        <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js"></script>
-        <script>
-          // Firebase Configuration
-          const firebaseConfig = {
-            apiKey: "AIzaSyCWB...your_api_key...",
-            authDomain: "maureenkahlweb.firebaseapp.com",
-            projectId: "maureenkahlweb",
-            storageBucket: "maureenkahlweb.appspot.com",
-            messagingSenderId: "275504220105",
-            appId: "1:275504220105:web:0b313cf61dc3c305248a18",
-            measurementId: "G-SXRV80MDEE"
-          };
-
-          // Initialize Firebase
-          const app = firebase.initializeApp(firebaseConfig);
-          const db = firebase.firestore(); // ✅ Initialize Firestore
-        
-        </script>
-
 
         <title>Maureen Kahl Website</title>
         <link rel="stylesheet" type="text/css" href="style.css">
@@ -265,20 +245,7 @@
                     </div>
                 </div>
             </div>
-            <div class="counter" id="visitor-count">0</div>
-            <div class="count-label">Current Views</div>
             
-            <script>
-            async function visitorCounter() {
-                try {
-                    const response = await fetch('/.netlify/functions/visitorCounter');
-                    const data = await response.json();
-                    document.getElementById('visitor-count').innerText = data.count;
-                } catch (error) {
-                    console.error('Error fetching visitor count:', error);
-                }
-            }
-            visitorCounter();
             </script>
          <a href='http://www.freevisitorcounters.com'>at www.freevisitorcounters.com</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=6d363bc710752f4394ffc2e91c1695bc5344a0bb'></script>
 <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1323247/t/1"></script>
