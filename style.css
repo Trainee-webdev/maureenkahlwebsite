@@ -1912,7 +1912,6 @@ button[type="submit"]:hover {
     display: flex;
     align-items: center; /* Vertically aligns text and counter */
     justify-content: center; /* Centers them horizontally in the box */
-    background-color: #c04f4f; /* Background color */
     padding: 10px 20px;
     border-radius: 5px; /* Optional: rounded corners */
 }
@@ -1927,7 +1926,11 @@ button[type="submit"]:hover {
     margin: 0;
     font-weight: bold;
     color: white;
-    white-space: nowrap; /* Prevents wrapping */
+    white-space: nowrap; /* Prevents text from wrapping */
+    line-height: 1; /* Ensures it aligns better */
+    display: flex;
+    align-items: center; /* Centers text vertically */
+    height: 100%; /* Matches counter height */
 }
 
 
