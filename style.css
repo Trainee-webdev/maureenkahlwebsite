@@ -1907,7 +1907,6 @@ button[type="submit"]:hover {
   display: flex; /* Makes it align well */
   justify-content: center;
   align-items: center;
-  padding-bottom: 10px;
 }
 
 
@@ -1932,7 +1931,6 @@ button[type="submit"]:hover {
   font-size: 10px;
   color: black;
   font-weight: normal;
-  padding: 10px;
 }
 
 .visitor-counter {
