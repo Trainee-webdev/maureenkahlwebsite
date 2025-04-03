@@ -1902,6 +1902,15 @@ button[type="submit"]:hover {
   transform: scale(1.1);
 }
 
+.visitor-counter {
+  position: absolute;
+  top: -30px; /* Adjust to move above Home */
+  left: 10px; /* Adjust the position */
+  font-size: 14px;
+  color: white;
+}
+
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .footer-container {
