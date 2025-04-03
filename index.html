@@ -8,6 +8,26 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
+        <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js"></script>
+        <script>
+          // Firebase Configuration
+          const firebaseConfig = {
+            apiKey: "AIzaSyCWB...your_api_key...",
+            authDomain: "maureenkahlweb.firebaseapp.com",
+            projectId: "maureenkahlweb",
+            storageBucket: "maureenkahlweb.appspot.com",
+            messagingSenderId: "275504220105",
+            appId: "1:275504220105:web:0b313cf61dc3c305248a18",
+            measurementId: "G-SXRV80MDEE"
+          };
+
+          // Initialize Firebase
+          const app = firebase.initializeApp(firebaseConfig);
+          const db = firebase.firestore(); // ✅ Initialize Firestore
+        
+        </script>
+
 
         <title>Maureen Kahl Website</title>
         <link rel="stylesheet" type="text/css" href="style.css">
